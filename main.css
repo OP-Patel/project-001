@@ -74,7 +74,7 @@ header button {
     color: black; 
 }
 
-.list-icon, .mobile-list, .inner-mobile-list, .inner-mobile-list li {
+.list-icon, .mobile-list, .inner-mobile-list, .inner-mobile-list li, .x-icon {
     display: none;
 }
 
