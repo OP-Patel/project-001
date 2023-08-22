@@ -6,12 +6,15 @@
     margin: 0;
     padding: 0;
 }
-
+a {
+    text-decoration: none;
+}
 header{
     display: flex;
     justify-content: space-between; 
     margin-left: 10%;
     margin-right: 15%;
+    margin-top: 10px;
     font-family: 'Rubik', serif;
 }
 
@@ -20,6 +23,10 @@ header{
     margin: 0;
     display: inline-block;
     font-size: 18px;
+}
+
+.nav-bar ul li a {
+    color: black;
 }
 
 .nav-bar {
@@ -63,13 +70,46 @@ header button {
     font-family: 'Rubik', serif;
 }
 
+.inner-mobile-list li a {
+    color: black; 
+}
 
-.list-icon, .mobile-list  {
+.list-icon, .mobile-list, .inner-mobile-list, .inner-mobile-list li {
     display: none;
+}
+
+.hover-underline-animation{
+    position: relative;
+    color: black;
+}
+  
+.hover-underline-animation::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: gray;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hover-enlarge-animation:hover {
+    transition: transform 1s;
+    -webkit-transform: scale(1);
+    transform: scale(1.05);
 }
 
 
 @media only screen and (max-width: 1050px){
+    
     .cart-icon{
         display: none;
     }
@@ -93,12 +133,18 @@ header button {
         padding: 20px 0;
         font-family: 'Rubik', serif;
     }
+
+    .inner-mobile-list li{
+        display: block;
+    }
     
-    .list-icon, .mobile-list{
+    .list-icon, .mobile-list {
         display: unset;
     }
 
     header{
         margin-right: 10%;
     }
+
+    
 }
