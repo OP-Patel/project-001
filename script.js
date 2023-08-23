@@ -1,3 +1,5 @@
+AOS.init(); //initalize the aos library
+
 $(".list-icon").on("click", function(){
     $(".list-icon").css("display", "none");
     $(".x-icon").css("display", "unset");
@@ -16,7 +18,6 @@ $(".list-icon").on("click", function(){
             $(this).delay(100 * i).fadeIn(500);
         });
     });
-
 
 });
  

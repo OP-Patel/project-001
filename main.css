@@ -1,21 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+h1{
+    padding-left: 12px;
+    font-size: 30px;
+}
+
+body{
+    background-color: white;
+}
+
 a {
     text-decoration: none;
 }
 header{
     display: flex;
     justify-content: space-between; 
-    margin-left: 10%;
+    margin-left: 15%;
     margin-right: 15%;
-    margin-top: 10px;
     font-family: 'Rubik', serif;
+    position: sticky;
+    top: 10px;
+    background-color: white;
+    border-radius: 500px;
 }
 
 .nav-bar ul li {
@@ -33,7 +47,8 @@ header{
     display: unset; 
     margin-top: 10px;
     margin-bottom: 0px;
-    padding: 0;
+    padding-right: 8.7%;
+    background-color: white;
 }
 
 header svg {
@@ -101,6 +116,20 @@ header button {
     transform-origin: bottom left;
 }
 
+.product-title{
+    margin-top: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.description{
+    font-family: 'Gentium Plus', serif;
+    padding-top: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
 .hover-enlarge-animation:hover {
     transition: transform 1s;
     -webkit-transform: scale(1);
@@ -108,7 +137,91 @@ header button {
 }
 
 
-@media only screen and (max-width: 1050px){
+#landing-page{
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 90vh; 
+}
+
+.landing-page-text{
+    font-size: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+}
+
+#featured{
+    margin-top: 20px;
+}
+
+img{
+    height: 270px;
+    width: auto;
+    
+}
+.row{
+    margin-top: 2vh;
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.row1{
+    margin-top: 2vh;
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 100px;
+    justify-content: center;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 500px;
+    max-width: 300px;
+}
+
+.input1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 300px;
+    max-width: 300px;
+}
+
+
+#input1:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/micke-desk-white__0526706_pe645107_s5.jpg?f=s")
+}
+
+#input2:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/lagkapten-alex-desk-white__1013518_pe829230_s5.jpg?f=s")
+}
+
+#input3:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/micke-desk-white__0526946_pe645238_s5.jpg?f=s")
+}
+
+#input4:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/flekke-daybed-with-2-drawers-2-mattresses-black-brown-vannareid-firm__0767747_pe754245_s5.jpg?f=s")
+}
+
+#input5:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/hemnes-daybed-with-3-drawers-2-mattresses-black-brown-vannareid-medium-firm__0767748_pe754247_s5.jpg?f=s")
+}
+
+#input6:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/tufjord-upholstered-bed-frame-djuparp-dark-green__0932771_pe791617_s5.jpg?f=s")
+}
+
+
+@media only screen and (max-width: 1250px){
     
     .cart-icon{
         display: none;
@@ -143,8 +256,34 @@ header button {
     }
 
     header{
-        margin-right: 10%;
+        margin-top: 10px;
+        margin-right: 15%;
+        position: inherit; 
     }
 
+    #landing-page{
+        height: 100vh;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .row{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    .row1{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    h1{
+        padding-left: 0px;
+        top: 10px;
+        background-color: white;
+        border-radius: 0px;
+    }
     
 }
