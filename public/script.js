@@ -21,3 +21,5 @@ $(".list-icon").on("click", function(){
 
 });
  
+
+$("main img").addClass("hover-gray-animation");
