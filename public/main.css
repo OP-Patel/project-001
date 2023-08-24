@@ -30,6 +30,7 @@ body{
 a {
     text-decoration: none;
 }
+
 header{
     display: flex;
     justify-content: space-between; 
@@ -147,6 +148,13 @@ header button {
     transform: scale(1.05);
 }
 
+.price-tag{
+    font-size: 15px;
+    color: #FF6969;
+    font-family: 'Taviraj', serif;
+}
+
+
 .hover-gray-animation:hover {
     transition: opacity 0.5s ease-in-out; 
     opacity: 0.7;
@@ -154,8 +162,8 @@ header button {
 
 #landing-page{
     margin-top: 50px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 16%;
+    margin-right: 16%;
     height: 90vh; 
 }
 
@@ -354,7 +362,7 @@ p{
     display: none;
 }
 
-@media only screen and (max-width: 1250px){
+@media only screen and (max-width: 1300px){
     
     .cart-icon{
         display: none;
@@ -467,6 +475,26 @@ p{
         font-size: 50px;
         text-align: center;
     }
+
+    /* moved to a bigger media query to resolve issues */
+
+    /* #landing-page{
+        height: 100vh;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    } */
+
+    /* #featured{
+        margin-top: 20px;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 25px;
+        margin-right: 25px;
+    } */
+
+
 
 }
 
