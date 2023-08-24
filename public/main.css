@@ -429,6 +429,91 @@ p{
     display: none;
 }
 
+/* CART.EJS */
+
+.cart-box1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 50px;
+}
+
+.image1{
+    height: 100px;
+    width: auto;
+}
+
+/* Override js */
+.image1:hover{
+    opacity: 1;
+}
+
+.item-cart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: left;
+    align-items: center; 
+    width: 100%;
+    gap: 50px;
+    justify-content: center;
+}
+
+.product-title-cart{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    opacity: 0.9;
+    text-decoration: 1px underline;
+}
+
+.product-description-cart{
+    font-family: 'Gentium Plus', serif;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.order-summary-box{
+
+}
+
+.nav-bar1 {
+    display: unset; 
+    margin-top: 10px;
+    margin-bottom: 0px;
+    background-color: white;
+}
+
+.nav-bar1 ul li {
+    padding: 0px 25px;
+    margin: 0;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.nav-bar1 ul li a {
+    color: black;
+}
+
+.minus{
+    margin-right: 10px;
+}
+
+.add{
+    margin-left: 10px;
+}
+
+.quantity-text{
+    font-family: 'Taviraj', serif;
+    font-size: 22px;
+}
 
 @media only screen and (max-width: 1300px){
     
@@ -437,6 +522,10 @@ p{
     }
 
     .nav-bar{
+        display: none; 
+    }
+
+    .nav-bar1{
         display: none; 
     }
 
@@ -616,3 +705,34 @@ p{
     }
 
 }
+
+@media only screen and (max-width: 860px){
+    .cart-box1{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 50px;
+        height: fit-content;
+    }
+
+    .quantity-text{
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+    .item-cart{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .product-description-cart{
+        text-align: left;
+    }
+
+}
+
+/* font-family: 'Rubik', serif; Use for headers and footers */
+/* font-family: 'Taviraj', serif; Use for section headers */
+/* font-family: 'Cormorant Garamond', serif; Use for product titles */
+/* font-family: 'Gentium Plus', serif; Use for product descriptions */
