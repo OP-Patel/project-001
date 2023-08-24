@@ -435,7 +435,7 @@ p{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 100vh;
+    height: fit-content;
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 50px;
@@ -480,8 +480,81 @@ p{
     font-size: 15px;
 }
 
-.order-summary-box{
+.sect-head{
+    margin-top: 10vh;
+    margin-right: 16%;
+    margin-left: 16%;
+    border-bottom: 1px solid black;
+    font-family: 'Taviraj', serif;
+    text-align: left;
+}
 
+.order-summary-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    margin-top: 10px;
+    height: fit-content;
+}
+
+.order-summary-row{
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.small-text{
+    font-family: 'Gentium Plus', serif;
+    color: gray;
+    font-size: 15px;
+}
+
+.small-price{
+    font-family: 'Gentium Plus', serif;
+    color: #FF1E00;
+    font-size: 15px;
+}
+
+.order-product-name{
+    font-size: 20px;
+    font-family: 'Gentium Plus', serif;
+    opacity: 0.9;
+}
+
+.order-product-price{
+    font-size: 20px;
+    color: #FF1E00;
+    font-family: 'Gentium Plus', serif;
+}
+
+.order-summary-subtotal{
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    border-top: 3px solid black;
+}
+
+.order-product-subtotal{
+    font-size: 25px;
+    color: #0D1282;
+    font-family: 'Gentium Plus', serif;
+
+}
+
+.order-subtotal-name{
+    font-size: 25px;
+    font-family: 'Gentium Plus', serif;
+    color: black;
+}
+
+.compress{
+    margin-left: 35%;
+    margin-right: 35%;
 }
 
 .nav-bar1 {
@@ -621,6 +694,24 @@ p{
         display: none;
     }
     
+    .compress{
+        margin: 0 10%;
+    }
+
+    .order-summary-box{
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .sect-head{
+        margin-top: 10vh;
+        margin-right: 10%;
+        margin-left: 10%;
+        border-bottom: 1px solid black;
+        font-family: 'Taviraj', serif;
+        text-align: center;
+    }
     
 }
 
