@@ -23,6 +23,10 @@ h1{
     z-index: 3;
 }
 
+.cartBody{
+    background-color: white;
+    margin-top: 12px !important;
+}
 body{
     background-color: white;
 }
@@ -43,6 +47,7 @@ header{
     border-radius: 500px;
     z-index: 3;
 }
+
 
 .nav-bar ul li {
     padding: 0px 25px;
@@ -225,7 +230,6 @@ img{
     height: 500px;
     max-width: 300px;
 }
-
 
 #input1:hover{
     content: url("https://www.ikea.com/ca/en/images/products/micke-desk-white__0526706_pe645107_s5.jpg?f=s")
@@ -424,6 +428,7 @@ p{
 #smallText{
     display: none;
 }
+
 
 @media only screen and (max-width: 1300px){
     
