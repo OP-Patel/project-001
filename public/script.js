@@ -23,3 +23,16 @@ $(".list-icon").on("click", function(){
  
 
 $("main img").addClass("hover-gray-animation");
+
+
+$("#checkout").on( "mouseenter", 
+function(){
+    $("#checkout").css("color", "black");
+    $("#checkout").removeClass("addNavyColor");
+    $("#checkout").addClass("addLightBlueColor");
+}).on( "mouseleave",  
+function(){
+    $("#checkout").css("color", "white");
+    $("#checkout").removeClass("addLightBlueColor"); 
+    $("#checkout").addClass("addNavyColor");
+});
