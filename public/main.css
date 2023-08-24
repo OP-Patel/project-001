@@ -150,7 +150,7 @@ header button {
 
 .price-tag{
     font-size: 15px;
-    color: #FF6969;
+    color: #FF1E00;
     font-family: 'Taviraj', serif;
 }
 
@@ -160,11 +160,12 @@ header button {
     opacity: 0.7;
 }
 
-#landing-page{
+#landing-page1, #landing-page2, #landing-page3{
+    padding-top: 10px;
     margin-top: 50px;
     margin-left: 16%;
     margin-right: 16%;
-    height: 90vh; 
+    height: 100vh; 
 }
 
 .landing-page-text{
@@ -173,18 +174,21 @@ header button {
     text-align: center;
 }
 
-#featured{
+#featured, #desks, #beds{
     margin-top: 20px;
+    padding-top: 50px;
     font-size: 25px;
     text-align:left;
     border-bottom: 1px solid black;
 }
+
 
 img{
     height: 270px;
     width: auto;
     
 }
+
 .row{
     margin-top: 2vh;
     width: 100%;
@@ -218,7 +222,7 @@ img{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    height: 300px;
+    height: 500px;
     max-width: 300px;
 }
 
@@ -246,6 +250,65 @@ img{
 #input6:hover{
     content: url("https://www.ikea.com/ca/en/images/products/tufjord-upholstered-bed-frame-djuparp-dark-green__0932771_pe791617_s5.jpg?f=s")
 }
+
+#input7:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/malm-desk-white__0526708_pe645109_s5.jpg?f=s")
+}
+
+#input8:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/trotten-desk-sit-stand-white__1040267_pe840629_s5.jpg?f=s")
+}
+
+#input9:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/kallax-linnmon-desk-combination-white__1215327_pe911964_s5.jpg?f=s")
+}
+
+#input10:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/besta-burs-desk-high-gloss-white__0526857_pe645211_s5.jpg?f=s")
+}
+
+#input11:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/utespelare-gaming-desk-black__0997502_pe822689_s5.jpg?f=s")
+}
+
+#input12:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/idasen-desk-sit-stand-black-dark-gray__0685806_pe721491_s5.jpg?f=s")
+}
+
+#input13:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/brusali-desk-brown__0526864_pe645217_s5.jpg?f=s")
+}
+
+#input14:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/slattum-upholstered-bed-frame-knisa-light-gray__0747525_pe744571_s5.jpg?f=s")
+}
+
+#input15:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/malm-high-bed-frame-2-storage-boxes-black-brown-luroey__0722754_pe733713_s5.jpg?f=s")
+}
+
+#input16:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/askvoll-bed-frame-white__1163455_pe890183_s5.jpg?f=s")
+}
+
+#input17:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/blakullen-uph-bed-frame-with-corner-headboard-knisa-medium-blue__1012654_pe828949_s5.jpg?f=s")
+}
+
+#input18:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/gladstad-upholstered-bed-frame-kabusa-light-gray__1011835_pe828597_s5.jpg?f=s")
+}
+
+#input19:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/vadheim-upholstered-bed-frame-gunnared-light-green__0934564_pe792435_s5.jpg?f=s")
+}
+
+#input20:hover{
+    content: url("https://www.ikea.com/ca/en/images/products/kleppstad-bed-frame-white-vissle-beige__1036672_pe838472_s5.jpg?f=s")
+}
+
+
+
 
 .flex-container{
     padding-top: 45px;
@@ -402,20 +465,44 @@ p{
         position: inherit; 
     }
 
-    #landing-page{
-        height: 100vh;
+    #landing-page1{
+        height: fit-content;
         margin-left: 0;
         margin-right: 0;
         display: flex;
         flex-direction: column;
-
     }
+
+    #landing-page2{
+        height: fit-content;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #landing-page3{
+        height: fit-content;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #featured, #desks, #beds{
+        margin-top: 20px;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 25px;
+        margin-right: 25px;
+    } 
 
     .row{
         display: flex;
         position: relative;
         flex-wrap: wrap;
     }
+
     .row1{
         display: flex;
         position: relative;
@@ -476,26 +563,6 @@ p{
         text-align: center;
     }
 
-    /* moved to a bigger media query to resolve issues */
-
-    /* #landing-page{
-        height: 100vh;
-        margin-left: 0;
-        margin-right: 0;
-        display: flex;
-        flex-direction: column;
-    } */
-
-    /* #featured{
-        margin-top: 20px;
-        font-size: 25px;
-        text-align: center;
-        margin-left: 25px;
-        margin-right: 25px;
-    } */
-
-
-
 }
 
 @media only screen and (max-width: 2090px){
@@ -520,7 +587,6 @@ p{
     #bigText{
         display: none;
     }
-
 }
 
 
@@ -543,4 +609,5 @@ p{
         padding-right: 25px;
         padding-left: 25px;
     }
+
 }
