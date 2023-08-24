@@ -282,6 +282,7 @@ img{
     font-family: 'Cormorant Garamond', serif;
     font-size: 50px;
     text-align: right;
+    padding-left: 10px;
 }
 
 .item3{
@@ -349,11 +350,11 @@ p{
     text-decoration: 3px underline;
 }
 
-@media only screen and (max-width: 1250px){
+#smallText{
+    display: none;
+}
 
-    .grid-container{
-        display: none;
-    }
+@media only screen and (max-width: 1250px){
     
     .cart-icon{
         display: none;
@@ -401,6 +402,7 @@ p{
         flex-direction: column;
 
     }
+
     .row{
         display: flex;
         position: relative;
@@ -425,5 +427,92 @@ p{
         margin-left: 25px;
         margin-right: 25px;
     }
+
+    #desktop-landing{
+        display: none;
+    }
     
+    
+}
+
+@media only screen and (max-width: 1890px){
+    #eye-catcher-wrapper-left{
+        grid-template-columns: 1fr 500px 1fr 1fr;
+        justify-items: right;
+    }
+    .removeFirst{
+        display: none !important;
+    }
+    
+    #secondOff{
+        border-radius: 8px;
+    }
+
+    .eye-catcher1{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 50px;
+        text-align: right;
+    }
+
+    #eye-catcher-wrapper{
+        display: grid;
+        overflow: hidden;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 300px 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .eye-catcher1{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 50px;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 2090px){
+    #eye-catcher-wrapper-middle{
+        margin-top: 45px;
+        display: grid;
+        overflow-x: hidden;
+        width: 100%;
+        grid-template-columns: 500px 1fr 500px;
+        padding-left: 100px;
+        padding-right: 100px;
+        column-gap: 15px;
+        justify-items: center;
+        margin-bottom: 10vh;
+    }
+
+    #smallText{
+        display: unset;
+        font-size: 30px; 
+    }
+
+    #bigText{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 1500px){
+
+    .removeSecond{
+        display: none;
+    }
+
+    #eye-catcher-wrapper-left{
+        grid-template-columns: 1fr 500px 1fr;
+        justify-items: right;
+        padding-right: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 1370px){
+    #eye-catcher-wrapper-middle{
+        padding-right: 25px;
+        padding-left: 25px;
+    }
 }
