@@ -27,6 +27,7 @@ h1{
     background-color: white;
     margin-top: 12px !important;
 }
+
 body{
     background-color: white;
 }
@@ -165,12 +166,20 @@ header button {
     opacity: 0.7;
 }
 
-#landing-page1, #landing-page2, #landing-page3{
+#landing-page1, #landing-page2{
     padding-top: 10px;
     margin-top: 50px;
     margin-left: 16%;
     margin-right: 16%;
     height: 100vh; 
+}
+
+#landing-page3{
+    padding-top: 10px;
+    margin-top: 50px;
+    margin-left: 16%;
+    margin-right: 16%;
+    height: 90vh;
 }
 
 .landing-page-text{
@@ -309,8 +318,6 @@ img{
 #input20:hover{
     content: url("https://www.ikea.com/ca/en/images/products/kleppstad-bed-frame-white-vissle-beige__1036672_pe838472_s5.jpg?f=s")
 }
-
-
 
 
 .flex-container{
@@ -551,7 +558,6 @@ p{
 
 }
 
-
 #checkout{
     color: white;
     font-family: 'Rubik', serif;
@@ -560,6 +566,7 @@ p{
     padding: 10px 10px;
     border: none;
     outline: inherit;
+    margin-bottom: 11vh;
 }
 
 .addNavyColor{
@@ -644,6 +651,7 @@ p{
     box-shadow: 3px 3px 3px #C3ACD0;
 }
 
+
 #banners-2{
     margin-top: 5%;
 }
@@ -683,7 +691,35 @@ p{
     padding: 0 15px;
 }
 
+
+
+.footer-wrapper{
+    display: flex;
+    width: 100%;
+    height: auto;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 15%;
+}
+
+#copyright, #footer-anchor{
+    font-family: 'Rubik', serif;
+    font-size: 20px;
+}
+
+#footer-text{
+    padding-right: 6%;
+}
+
 @media only screen and (max-width: 1300px){
+
+    #footer-text{
+        padding-right: 12%;
+    }
+    
+    .footer-wrapper{
+        padding: 0% 5%;
+    }
 
     #mobile-landing{
         display: unset; 
@@ -875,11 +911,10 @@ p{
 
 
 @media only screen and (max-width: 1500px){
-
     .removeSecond{
         display: none;
     }
-
+    
     #eye-catcher-wrapper-left{
         grid-template-columns: 1fr 500px 1fr;
         justify-items: right;
@@ -955,11 +990,36 @@ p{
         color: #FAF7F0 !important;
     }
 
-
-
-
 }
 
+@media only screen and (max-width: 400px){
+
+    .mobile-hero-container{
+        background-image: url("https://www.ikea.com/images/trotten-desks-and-other-office-furniture-in-a-modern-one-sto-b81991a091846598d874667fd1b2f7af.jpg?f=xxxl");
+        filter: grayscale(70%)
+    }
+
+    #hero-text{
+        top: 30%;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    #hero-text-1{
+        left: 50%;
+        top: 40%;
+        margin-left: 0px;
+    }
+
+    #smallText{
+        left: 45%;
+        top: 50%;
+    }
+
+    #smallText a svg{
+        fill: white !important;
+    }
+}
 
 @media only screen and (max-width: 860px){
     .cart-box1{
@@ -970,6 +1030,16 @@ p{
         margin-right: 5%;
         margin-top: 50px;
         height: fit-content;
+    }
+
+    #footer-text{
+        display: none; 
+    }
+    .footer-wrapper{
+        padding-bottom: 10px;
+    }
+    #copyright, #footer-anchor{
+        font-size: 18px;
     }
 
     .quantity-text{
