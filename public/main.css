@@ -191,7 +191,6 @@ header button {
 img{
     height: 270px;
     width: auto;
-    
 }
 
 .row{
@@ -398,6 +397,12 @@ p{
 }
 
 #eye-catcher-wrapper-middle p svg{
+    -webkit-animation: hoverUpandDown 1s infinite linear;
+    animation: hoverUpandDown 1s infinite linear;
+    margin-top: 25px;
+}
+
+#mobile-landing .mobile-row2 p a svg{
     -webkit-animation: hoverUpandDown 1s infinite linear;
     animation: hoverUpandDown 1s infinite linear;
     margin-top: 25px;
@@ -617,8 +622,73 @@ p{
     font-size: 22px;
 }
 
+#mobile-landing{
+    display: none; 
+}
+
+.mobile-hero-container{
+    background-color: #FAF3F0;
+    margin-top: 25px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column; 
+    height: 100vh; /*switch to fit-content maybe later*/
+}
+
+.display-beds{
+    border-radius: 8px;
+}
+
+.display-beds-1{
+    border-radius: 55px;
+    box-shadow: 3px 3px 3px #C3ACD0;
+}
+
+#banners-2{
+    margin-top: 5%;
+}
+
+#hero-text-1{
+    margin-top: 20px;
+}
+
+#hero-text{
+    text-align: center !important;
+    margin-top: 20px !important;
+}
+
+.oval{
+    border-radius: 50% !important;
+}
+.mobile-row1{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    gap: 50px;
+}
+
+.mobile-row2{
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-right: 7%;
+    padding-left: 7%;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.mobile-row2 p{
+    padding: 0 15px;
+}
+
 @media only screen and (max-width: 1300px){
-    
+
+    #mobile-landing{
+        display: unset; 
+    }
+
     .cart-icon{
         display: none;
     }
@@ -825,6 +895,71 @@ p{
     }
 
 }
+
+@media only screen and (max-width: 1135px){
+    .bed-remove-first{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 670px){
+    .mobile-hero-container{
+        background-image: url("https://www.ikea.com/images/trotten-desks-and-other-office-furniture-in-a-modern-one-sto-b81991a091846598d874667fd1b2f7af.jpg?f=xxxl");
+        height: 100vh;
+        overflow: hidden;
+        filter: grayscale(50%)
+    }
+
+    .removeBanner, .display-beds-1{
+        display: none;
+    }
+
+    #hero-text{
+        left: 50%;
+        position: absolute;
+        top: 25%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #hero-text-1{
+        padding: 10px 0;
+        left: 50%;
+        position: absolute;
+        top: 35%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    #smallText{
+        padding: 10px 0;
+        left: 50%;
+        position: absolute;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        margin-left: 15px;
+    }
+
+    #smallText a svg{
+        fill: #FAF7F0 !important;
+    }
+
+    .pop{
+        color: #FAF7F0 !important;
+    }
+
+
+
+
+}
+
 
 @media only screen and (max-width: 860px){
     .cart-box1{
