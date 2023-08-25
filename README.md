@@ -30,4 +30,4 @@ The website **does not** use any external component framework (like Bootstrap) a
 <h2>Live Demo</h2>
 In-depth demo click below or visit link: https://www.youtube.com/watch?v=RZ4VshlqsA8 <br>
 
-[![Live Demo Thumbnail Link](https://img.youtube.com/vi/RZ4VshlqsA8/0.jpg)](https://www.youtube.com/watch?v=RZ4VshlqsA8)
+[![Live Demo Thumbnail Link](https://img.youtube.com/vi/MGOszefETpU/0.jpg)](https://www.youtube.com/watch?v=MGOszefETpU)
